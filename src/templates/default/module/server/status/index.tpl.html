@@ -109,8 +109,46 @@
                                     <span class="timeline-heading">Agora</span>
                                     <h4 class="h5 text-warning">Hmmm, me parece que tudo está ok! <br> Agora, se identificou que algo não funciona corretamente clique no botão abaixo, e lembre-se esteja sempre alerta. </h4>
                                 <center>    <div class="action-btns mt-4">
-                                                                                    <a href="#" class="btn primary-solid-btn mr-2">Reportar indisponibilidade</a>
+                                                                        
+                                                                                    <section class="contact-us-section ptb-100">
+                                                                                        <div class="container">
+                                                                                            <div class="row justify-content-around">
+                                                                                                <div class="col-12 px-5 pb-3 message-box d-none">
+                                                                                                    <div class="alert alert-danger"></div>
+                                                                                                </div>
+                                                                                                <div class="col-md-12">
+                                                                                                    <div class="contact-us-form gray-light-bg rounded p-5">
 
+                                                                                                        <form action="envia.php" method="POST" id="contactForm" class="contact-us-form" novalidate="novalidate">
+                                                                                                            <div class="form-row">
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="form-group">
+                                                                                                                        <input type="text" class="form-control" name="servico" id="servico" placeholder="Serviço Afetado" required="required">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="form-group">
+                                                                                                                        <input type="email" class="form-control" name="ip" id="ip" placeholder="Endereço de IP ou URL" required="required">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-12">
+                                                                                                                    <div class="form-group">
+                                                                                                                        <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Descrição do problema"></textarea>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col-sm-12 mt-3">
+                                                                                                                    <button type="submit" class="btn primary-solid-btn" id="btnContactUs">
+                                                                                                                        Reportar indisponibilidade
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </form>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
                                                                                 </div> <center>
                                     </div>
                                 </li>
