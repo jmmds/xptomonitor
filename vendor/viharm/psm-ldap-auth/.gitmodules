@@ -1,0 +1,6 @@
+[submodule "phpDBauth"]
+	path = phpDBauth
+	url = https://viharm@bitbucket.org/viharm/phpdbauth.git
+[submodule "phpLDAPauth"]
+	path = phpLDAPauth
+	url = https://viharm@bitbucket.org/viharm/phpldapauth.git

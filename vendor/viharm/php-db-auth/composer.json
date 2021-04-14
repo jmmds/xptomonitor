@@ -1,0 +1,32 @@
+{
+	"name": "viharm/php-db-auth",
+	"type": "library",
+	"description": "PHP library for looking up users in a database table field",
+	"keywords": ["auth","php","database"],
+	"homepage": "https://bitbucket.org/viharm/phpdbauth",
+	"license": "BSD-3-Clause",
+	"authors": [
+    {
+      "name": "Viharm",
+      "email": "viharm@malviya.net",
+      "homepage": "http://viharm.malviya.net",
+      "role": "Developer"
+    }
+	],
+  "support": {
+    "issues": "https://bitbucket.org/viharm/phpdbauth/issues"
+  },	
+	"require": {
+    "php": ">=5.3.0",
+    "mnsami/composer-custom-directory-installer": "1.1.*",
+    "viharm/php-khelper": "^1.4.1"
+	},
+ "config": {
+    "vendor-dir": "Lib"
+  },
+  "extra": {
+    "installer-paths": {
+      "./Lib/phpKhelper": ["viharm/php-khelper"]
+    }
+  }
+}

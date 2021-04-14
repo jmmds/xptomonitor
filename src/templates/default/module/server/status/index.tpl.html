@@ -1,0 +1,141 @@
+
+
+<div class="main">
+  <!--our status section start-->
+        <section class="our-system-status ptb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-lg-8">
+                        <div class="section-heading text-center mb-5">
+                            <h2>Status dos Serviços</h2>
+
+                        </div>
+                    </div>
+                </div>
+
+                            <!--Tablea de Serviços Offline-->
+                {% for server in servers_offline %}
+                <div class="row mt-5">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="services-status-wrap">
+                            <ul class="list-unstyled services-status-list">
+                              <li class="d-flex align-items-center white-bg p-4 rounded single-status">
+                                  <div class="status-location-heading">
+                                      <h5 class="mb-2"> {{ server.label }} <span class="ti-info-alt" onclick="window.location.href='{{ server.url_view|raw }}'"></span>
+
+                                      </h5>
+                                      <span class="badge color-1 color-1-bg">{{ label_last_online }} : {{ server.last_online_nice }}</span>
+                                      <span class="badge color-1 color-1-bg">{{ label_last_check }} : {{ server.last_checked_nice }}</span>
+
+                                  </div>
+                                  <div class="status-mode">
+                                      <span class="color-1 color-1-bg px-2 py-1 rounded"><strong>Offiline</strong></span>
+                                  </div>
+                              </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+
+                <!--Tabela de Serviços Online -->
+                	{% for server in servers_online %}
+                <div class="row mt-5">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="services-status-wrap">
+                            <ul class="list-unstyled services-status-list">
+                              <li class="d-flex align-items-center white-bg p-4 rounded single-status">
+                                  <div class="status-location-heading">
+                                      <h5 class="mb-2"> {{ server.label }} <span class="ti-info-alt" onclick="window.location.href='{{ server.url_view|raw }}'"></span>
+
+                                      </h5>
+                                      <span class="badge color-5 color-5-bg">{{ label_last_online }} : {{ server.last_online_nice }}</span>
+                                      <span class="badge color-5 color-5-bg">{{ label_last_check }} : {{ server.last_checked_nice }}</span>
+                                      <span class="badge color-5 color-5-bg">{{ label_rtime }} : {{ (server.rtime * 1000)|round(2) }} ms</span>
+
+                                  </div>
+                                  <div class="status-mode">
+                                      <span class="color-5 color-5-bg px-2 py-1 rounded"><strong>Online</strong></span>
+                                  </div>
+                              </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+
+                <!--status row end-->
+
+                <!--status Offline list start-->
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <ul class="timeline-list mt-5 pl-3">
+                            {% for server in servers_offline %}
+                            <li class="timeline-item">
+                                <span class="timeline-icon btn-sm rounded-circle">
+                                      <span class="ti-alarm-clock"></span>
+                                </span>
+
+
+                                <span class="timeline-heading">Agora</span>
+                                <h4 class="h5 text-danger">O serviço abaixo requer atenção</h4>
+                                <div class="mb-4">
+                                    <p class="mb-2"><span class="font-weight-semi-bold"></span> Olá, o serviço: {{ server.label }} esteve online pela última vez em: {{ server.last_online_nice }} , por tanto verifique se ocorreu algum problema.
+                                    para mais informações: </p>
+
+                                    <center>    <div class="action-btns mt-4">
+                                                                                        <a href="{{ server.url_view|raw }}" class="btn primary-solid-btn mr-2">Clique aqui</a>
+
+                                                                                    </div> <center>
+
+                                </div>
+
+                            </li>
+                                {% endfor %}
+                                {% if not servers_offline and not servers_warning %}
+                                <li class="timeline-item">
+                                    <span class="timeline-icon btn-sm rounded-circle">
+                                          <span class="ti-alarm-clock"></span>
+                                    </span>
+                                    <span class="timeline-heading">Agora</span>
+                                    <h4 class="h5 text-warning">Hmmm, me parece que tudo está ok! <br> Agora, se identificou que algo não funciona corretamente clique no botão abaixo, e lembre-se esteja sempre alerta. </h4>
+                                <center>    <div class="action-btns mt-4">
+                                                                                    <a href="#" class="btn primary-solid-btn mr-2">Reportar indisponibilidade</a>
+
+                                                                                </div> <center>
+                                    </div>
+                                </li>
+                                {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <!--status list end-->
+
+            </div>
+        </section>
+        <!--our status section end-->
+
+    </div>
+
+    {% if auto_refresh %}
+    <script>
+    setInterval(function() {
+      $.ajax({
+        url:"?",
+        success: function(html, status) {
+          $("#content").html(html);
+          psm_setLayout({{ layout }});
+        }
+      });
+    }, {{ auto_refresh_seconds }} * 1000);
+    </script>
+    {% endif %}

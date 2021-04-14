@@ -1,0 +1,24 @@
+{
+	"name": "viharm/psm-ldap-auth",
+	"type": "library",
+	"description": "Module for authenticating PHP Server Monitor users against a directory",
+	"keywords": ["auth","php","ldap","openldap","ad","php server monitor","psm"],
+	"homepage": "https://gitlab.com/viharm/PsmLDAPauth",
+	"license": "GPL-3.0-only",
+	"authors": [
+    {
+      "name": "Viharm",
+      "email": "viharm@malviya.net",
+      "homepage": "http://viharm.malviya.net",
+      "role": "Developer"
+    }
+	],
+  "support": {
+    "issues": "https://gitlab.com/viharm/PsmLDAPauth/issues"
+  },	
+	"require": {
+    "php": ">=5.3.0",
+    "viharm/php-ldap-auth": "^2.4.0",
+    "viharm/php-db-auth": "^2.6.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"name": "viharm/php-khelper",
+	"type": "library",
+	"description": "A companion PHP library to accompany Kint (http://kint-php.github.io/kint/)",
+	"keywords": ["debug","php","kint"],
+	"homepage": "https://gitlab.com/viharm/phpKhelper",
+	"license": "BSD-3-Clause",
+	"authors": [
+    {
+      "name": "Viharm",
+      "email": "viharm@malviya.net",
+      "homepage": "http://viharm.malviya.net",
+      "role": "Developer"
+    }
+	],
+	"require": {
+    "php": ">=5.3.0"
+	}
+}
