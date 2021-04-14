@@ -39,8 +39,8 @@ Obs: Ao realizar a instalação em seu servidor linux, acesse os diretórios do 
 
 Você pode testar a ferramenta através da Url: http://xpto.myhubdns.us
 
-Usuário: usuario
-Senha: senha
+* Usuário: usuario
+* Senha: senha
 
 
 
