@@ -1,6 +1,6 @@
 # XPTO Monitor
+==================
 Versão: 1.0 (Beta)
-
 O XPTO Monitor, é uma interface Web para gerenciamento e abertura de chamados para incidentes(via e-mail) para os sites e servidores monitorados.
 
 #Caracteristicas
@@ -11,7 +11,8 @@ Gráfico com tempo de atividade e latência;
 Dashboard de fácil entendimento com sinalizações em caso de indisponibilidade;
 Abertura de Registro (e-mail) direto na DashBoard (Em desenvolvimento)
 
-#Requisitos
+#Requisitos:
+---------
 
 Web server
 MySQL database
@@ -33,7 +34,9 @@ ext-xml
 Obs: Ao realizar a instalação em seu servidor linux, acesse os diretórios do sistema e execute o seguinte comando: php composer.phar install.
 
 
-#Licença
+#Licença:
+---------
+
 
 O XPTO Monitor é baseado no sistema @PHPServerMonitor, com algumas customs personalizadas para atender a algumas demandas e resolver problemas não supridas pelo sistema de origem. Tanto o @PHPServerMonitor quanto o XPTO Monitor são softwares livres: você pode redistribuí-lo e / ou modificá-lo sob os termos da GNU General Public License conforme publicada pela Free Software Foundation, seja a versão 3 da Licença, ou (por sua opção) qualquer versão posterior.
 
