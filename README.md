@@ -14,22 +14,23 @@ Abertura de Registro (e-mail) direto na DashBoard (Em desenvolvimento)
 #Requisitos:
 ---------
 
-*Servidor Web
-*MySQL 
-*For PHP5: 5.5.9+
-*For PHP7: 7.0.8+
-*PHP Extensions (modules)
-  *ext-curl
-  *ext-ctype
-  *ext-filter
-  *ext-hash
-  *ext-json
-  *ext-libxml
-  *ext-openssl
-  *ext-pdo
-  *ext-pcre
-  *ext-sockets
-  *ext-xml
+* Web server
+* MySQL database
+* For PHP5: 5.5.9+
+* For PHP7: 7.0.8+
+* PHP Extensions (modules)
+
+  * ext-curl
+  * ext-ctype
+  * ext-filter
+  * ext-hash
+  * ext-json
+  * ext-libxml
+  * ext-openssl
+  * ext-pdo
+  * ext-pcre
+  * ext-sockets
+  * ext-xml
 
 Obs: Ao realizar a instalação em seu servidor linux, acesse os diretórios do sistema e execute o seguinte comando: php composer.phar install.
 
