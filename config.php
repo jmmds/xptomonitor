@@ -6,3 +6,4 @@ define('PSM_DB_USER', '');
 define('PSM_DB_PASS', '');
 define('PSM_DB_PREFIX', 'psm_');
 define('PSM_BASE_URL', '');
+
