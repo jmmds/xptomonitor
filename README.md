@@ -9,7 +9,7 @@ Monitoramento de Serviços e Sites ( Via Ping ou HTTP);
 Notificação por E-mail, telegram bot e Webhooks;
 Gráfico com tempo de atividade e latência;
 Dashboard de fácil entendimento com sinalizações em caso de indisponibilidade;
-Abertura de Registro (e-mail) direto na DashBoard (Em desenvolvimento)
+Abertura de Registro (e-mail) direto na DashBoard (Disponível no update 1.1)
 
 #Requisitos:
 ---------
