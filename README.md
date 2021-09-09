@@ -1,6 +1,6 @@
 # XPTO Monitor
 ==================
-* Versão: 1.0.1 (Beta)
+* Versão: 2.0
 O XPTO Monitor, é uma interface Web para gerenciamento e abertura de chamados para incidentes(via e-mail) para os sites e servidores monitorados.
 
 #Caracteristicas
