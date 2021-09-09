@@ -53,4 +53,3 @@ if ($success && $errorMSG == ""){
         echo $errorMSG;
     }
 }
-
